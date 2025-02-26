@@ -1,0 +1,23 @@
+body{
+    color: #000000;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.cabecalho__menu{
+    
+    padding: 22px;
+}
+
+.cabecalho__menu__navigation{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.rodape{
+   
+}
