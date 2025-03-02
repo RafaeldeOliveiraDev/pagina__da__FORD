@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -87,6 +86,7 @@ body {
 
 .rodape__elementos__esquerda {
   display: flex;
+  padding: 10px 16px;
   align-items: center;
   gap: 16px;
 }
@@ -117,7 +117,7 @@ body {
   height: 0;
   overflow: hidden;
   width: 100%;
-  border: 2px solid #000000;
+
 }
 
 .main__video iframe {
@@ -129,21 +129,59 @@ body {
   object-fit: cover;
 }
 
-.main__content__models{
+.modelos{
   display: flex;
   justify-content: center;
-  gap: 54px;
-}
-
-.main__content__models__cars{
-  display: flex;
-  flex-direction: row;
-}
-
-.main__content__models__formgroup{
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 54px;
+  margin: 2rem 0;
+}
+
+.modelos__container img{
+  width: 100%;
+  height: auto;
+  transform: scale(0.65);
+}
+
+.modelos__container__info{
+  display: flex ;
+}
+
+
+.modelos__container__info input[type="checkbox"] {
+  transform: scale(3.5);  /* Aumenta o checkbox para ficar mais visível */
+  margin-right: 2.35rem;
+  
+}
+
+.modelos__container__info__paragrafo{
+
+}
+
+.paragrafo__destaque{
+  color: blue;
+}
+
+.botao__comparar__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.btn-comparar{
+  transform: scale(1.7);
+  padding: 8px 24px;
+  border-radius: 16px;
+  background-color: blue;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+
+.btn-comparar:hover{
+  background-color: #121212;
+  padding: 8px 36px;
+  transition: 0.3s;
 }
 
 

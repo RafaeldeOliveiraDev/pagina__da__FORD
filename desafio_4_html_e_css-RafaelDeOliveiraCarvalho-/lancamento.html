@@ -31,7 +31,7 @@
         <!-- div container para deixar o video da fordd reesponsivo -->
 
         <iframe
-          src="https://www.youtube.com/embed/vQsryuNmsL0"
+          src="https://www.youtube.com/embed/vQsryuNmsL0" asdasddassdadasdvadvadvavcdasdvavadvadvadvasadvasdv
           title="Ford Ranger 2022 | Gerações"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -41,34 +41,53 @@
         <!-- elemento html que insere videos do youtube -->
       </div>
 
-      <section class="main__content__models">
+      <section class="modelos">
         
-            <div class="main__content__models__formgroup">
+          <div class="modelos__container">
            
              <a href=""><img src="./anexo_desafio_htmlcss/img/XL Cabine.jpg" alt="" /> </a>
-         
-             <input class="checkbox" id="checkbox1" type="checkbox" />
-             <label for="checkbox1"> checkbox1</label>
-         
-        </div>
+              
+            <div class="modelos__container__info">
+             
 
-          <div class="main__content__models__formgroup">
-            <a href=""><img src="./anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt=""/></a>
-           
-            <input class="checkbox" id="checkbox2" type="checkbox" />
-            <label for="checkbox1"> checkbox2</label>
-        </div>
-
-          <div class="main__content__models__formgroup">
-            <a href=""><img src="./anexo_desafio_htmlcss/img/storm.jpg" alt="" /></a>
-           
-            <input class="checkbox" id="checkbox3" type="checkbox" />
-            <label for="checkbox1"> checkbox3</label>
+              <input type="checkbox" name="rangerXL" id="ranger1" value="ranger1"> 
+              <label for="ranger1"> <p class="modelos__container__info__paragrafo"> <strong class="paragrafo__destaque">XL Cabine Simples 2.2 Diesel</strong> <br> ... 2022</p></label> 
+              
+             
             </div>
-       
-      
-    
+        </div>
+ 
+          <div class="modelos__container">
+            <a href=""><img src="./anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt=""/></a>
+          
+            <div class="modelos__container__info">
+            
+
+              <input type="checkbox" name="rangerXLS" id="ranger2" value="ranger2"> 
+              <label for="ranger2"><p class="modelos__container__info__paragrafo"> <strong class="paragrafo__destaque">XLS 2.2 Diesel 4X4 AT 2022 •</strong> <br> Motor 3.2 Turbo br</p></label> 
+             
+             
+           
+          </div>
+        </div>
+
+          <div class="modelos__container">
+            <a href=""><img src="./anexo_desafio_htmlcss/img/storm.jpg" alt="" /></a>
+          
+            
+            <div class="modelos__container__info">
+              <input type="checkbox" name="rangerSTORM" id="ranger3" value="ranger3">
+               <label for="ranger3L"><p class="modelos__container__info__paragrafo"> <strong class="paragrafo__destaque">STORM 3.2 Diesel 4X4 AT 2022</strong> <br> Motor 3.2 Turbo br</p></label>
+               
+            </div> 
+          </div>
+             
     </section>
+
+    <div class="botao__comparar__container">
+      <button type="button" class="btn-comparar">Comparar carros</button>
+    </div>
+
     </main>
 
     <footer class="rodape">
