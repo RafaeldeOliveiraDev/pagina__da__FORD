@@ -1,23 +1,149 @@
-body{
-    color: #000000;
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.cabecalho__menu{
-    
-    padding: 22px;
+body {
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  /* Para centralizar o conteúdo com flex: */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
-.cabecalho__menu__navigation{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    
+.header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
 }
 
-.rodape{
-   
+
+.header__imagem {
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  
 }
+
+.header__navigation__links {
+  display: flex;
+  flex: 0.85;
+  text-align: center;
+  justify-content: center;
+  gap: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  color: #121212;
+}
+
+/* Estilização específica para os links */
+.header__navigation__links__link {
+  text-decoration: none;
+  background-color: #00095B;
+  padding: 12px;
+  border-radius: 8px;
+  color: #f6f6f6;
+}
+ 
+.header__navigation__links__link:hover{
+  padding: 1.5%;
+  background-color: #121212;
+  transition: 0.4s;
+}
+
+
+.conteudo__principal {
+  padding: 0 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  color:  #00095B;
+  margin: 1rem 0; /* Espaçamento para separar do header e footer */
+}
+
+.conteudo__principal__texto {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.rodape {
+  background-color: #00095B;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px; 
+  align-items: center;
+  margin-top: auto;
+}
+
+.rodape__elementos__esquerda {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rodape__elementos__texto {
+  color: #f6f6f6;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+}
+
+/* Caso queira aplicar margem às imagens das redes sociais */
+.rodape__elementos__direita{
+  padding: 0 26.5px ;
+}
+
+/*página 2: Lançamento */
+.main__content{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  justify-content: center;
+  gap: 48px;
+}
+
+.main__video{
+  position: relative;
+  padding-bottom: 35%; /* Proporção 16:9 (9/16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  border: 2px solid #000000;
+}
+
+.main__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__content__models{
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+}
+
+.main__content__models__cars{
+  display: flex;
+  flex-direction: row;
+}
+
+.main__content__models__formgroup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

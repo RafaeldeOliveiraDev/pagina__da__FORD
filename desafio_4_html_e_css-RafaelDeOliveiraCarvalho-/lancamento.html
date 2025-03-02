@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossos novos lançamentos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__imagem">
+        <img
+          src="./anexo_desafio_htmlcss/img/logo-ford-256.png"
+          alt="Logomarca da FORD"
+        />
+      </div>
+
+      <nav class="header__navigation__links">
+        <a class="header__navigation__links__link" href="home.html">Home</a>
+        <a class="header__navigation__links__link" href="lancamento.html"
+          >Lançamento</a
+        >
+        <a class="header__navigation__links__link" href="contato.html"
+          >Contato</a
+        >
+      </nav>
+    </header>
+
+    <main class="main__content">
+      <div class="main__video">
+        <!-- div container para deixar o video da fordd reesponsivo -->
+
+        <iframe
+          src="https://www.youtube.com/embed/vQsryuNmsL0"
+          title="Ford Ranger 2022 | Gerações"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- elemento html que insere videos do youtube -->
+      </div>
+
+      <section class="main__content__models">
+        
+            <div class="main__content__models__formgroup">
+           
+             <a href=""><img src="./anexo_desafio_htmlcss/img/XL Cabine.jpg" alt="" /> </a>
+         
+             <input class="checkbox" id="checkbox1" type="checkbox" />
+             <label for="checkbox1"> checkbox1</label>
+         
+        </div>
+
+          <div class="main__content__models__formgroup">
+            <a href=""><img src="./anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt=""/></a>
+           
+            <input class="checkbox" id="checkbox2" type="checkbox" />
+            <label for="checkbox1"> checkbox2</label>
+        </div>
+
+          <div class="main__content__models__formgroup">
+            <a href=""><img src="./anexo_desafio_htmlcss/img/storm.jpg" alt="" /></a>
+           
+            <input class="checkbox" id="checkbox3" type="checkbox" />
+            <label for="checkbox1"> checkbox3</label>
+            </div>
+       
+      
     
-</body>
+    </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape__elementos__esquerda">
+        <p class="rodape__elementos__texto">Redes Sociais</p>
+        <div class="rodape__elementos__logos">
+          <a href="">
+            <img
+              src="./anexo_desafio_htmlcss/img/facebook-50.png"
+              alt="Logo do Facebook"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./anexo_desafio_htmlcss/img/instagram-logo-50.png"
+              alt="Logo do instagram"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./anexo_desafio_htmlcss/img/youtube-squared-50.png"
+              alt="Logo do youtube"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="rodape__elementos__direita">
+        <a href="">
+          <img src="./anexo_desafio_htmlcss/img/ford-96.png" alt="Logo Ford" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
