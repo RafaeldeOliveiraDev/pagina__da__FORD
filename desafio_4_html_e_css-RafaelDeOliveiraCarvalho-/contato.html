@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./anexo_desafio_htmlcss/css/reset.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="header__imagem">
+            <img src="./anexo_desafio_htmlcss/img/logo-ford-256.png" alt="Logomarca da FORD" />
+        </div>
+
+        <nav class="header__navigation__links">
+            <a class="header__navigation__links__link" href="home.html">Home</a>
+            <a class="header__navigation__links__link" href="lancamento.html">Lançamento</a>
+            <a class="header__navigation__links__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="main__formulario">
+
+        <img src="./anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt="">
+
+        <div class="container__formulario">
+           
+            <div class="header__formulario">
+                <h2>Sobre você</h2>
+            </div>
+      
+            <form id="form" class="form">
+                <div class="form__control">
+                    <label for="username">Nome</label>
+                    <input type="text" id="username" placeholder="Digite seu nome ..." required>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-checked-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail ..." required>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-checked-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" placeholder="Digite seu telefone..." required>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-checked-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label for="assunto">Qual o assunto?</label>
+                    <select name="assunto" id="assunto" required>
+                    <option selected disabled value="">Selecione o assunto...</option>
+                    <option>Elogio</option>
+                    <option>Reclamação</option>
+                    <option>Solicitação</option>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-checked-circle"></i>
+                    <small>error message</small>
+                    </select> 
+                    
+                </div>
+
+                <div class="form__control">
+                    <label for="mensagem">Comentários</label>
+                    <input type="text" id="mensagem" placeholder="Deixe sua mensagem..." required>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-checked-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+           
+    </main>
     
+    <footer class="rodape">
+        <div class="rodape__elementos__esquerda">
+            <p class="rodape__elementos__texto">Redes Sociais</p>
+            <div class="rodape__elementos__logos">
+                <a href="">
+                    <img src="./anexo_desafio_htmlcss/img/facebook-50.png" alt="Logo do Facebook" />
+                </a>
+                <a href="">
+                    <img src="./anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="Logo do instagram" />
+                </a>
+                <a href="">
+                    <img src="./anexo_desafio_htmlcss/img/youtube-squared-50.png" alt="Logo do youtube" />
+                </a>
+            </div>
+        </div>
+        <div class="rodape__elementos__direita">
+            <a href="">
+                <img src="./anexo_desafio_htmlcss/img/ford-96.png" alt="Logo Ford" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/56018993b9.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
