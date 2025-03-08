@@ -1,0 +1,108 @@
+@media(max-width: 768px){
+ 
+    /* PAGINA 1: HOME */
+    .header{
+        padding: 4% 7%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    
+    .header__imagem {
+        width: 32%;
+    }
+
+    .header__navigation{
+        display: none;
+     }
+    
+     .header__navigation__mobile{
+        display: inline-block;
+        position: relative;
+     }
+
+     .header__navigation__mobile details{
+        display: inline-block;
+        position: relative;
+        
+     }
+
+     .header__navigation__mobile summary{
+        font-size: 24px;
+        cursor: pointer;
+        user-select: none;
+        margin: 0;
+     }
+
+     .header__navigation__mobile summary::-webkit-details-marker {
+        display: none;
+    } 
+
+    .header__navigation__mobile details nav {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: #00095b;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 15px;
+        margin: 0;
+        list-style: none;
+        display: none;
+        min-width: 150px;
+    }
+
+    .header__navigation__mobile  details[open] nav {
+        display: block;
+      }
+
+      .header__navigation__link {
+        display: block;
+        padding: px;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 17px;
+      }
+
+      .header__navigation__link:hover {
+        color: #333;
+      }
+
+      .conteudo__principal{
+        gap: 48px;
+        padding: 0 0.35%;
+      }
+      
+      .conteudo__principal__imagem{
+        width: 100% !important;
+        
+      }
+
+      .conteudo__principal__texto{
+        font-size: 1.75rem;
+        padding: 0 1.5%;
+        font-family: "FordAntenna", Arial, Helvetica, "Microsoft YaHei", "微软雅黑", "STXihei", "华文细黑", "SimSun", "宋体", serif;
+      }
+
+      .rodape{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+
+      .rodape__elementos__esquerda{
+        
+        padding: 2% 0;
+      }
+
+      .rodape__elementos__texto{
+        font-size: 20px;
+      }
+
+      .rodape__elementos__direita{
+       
+        padding: 2% 0;
+      }
+
+  }

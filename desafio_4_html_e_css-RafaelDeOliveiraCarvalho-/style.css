@@ -14,38 +14,39 @@ body {
   /* Para centralizar o conteúdo com flex: */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-family: "FordAntenna", Arial, Helvetica, "Microsoft YaHei", "微软雅黑", "STXihei", "华文细黑", "SimSun", "宋体", serif;;
+  /* justify-content: center; */
 }
 
 /* Página1: HOME */
 
 .header {
   border-bottom: 2px solid #00095b;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
   align-items: center;
-  padding: 12px 24px;
+  justify-items: center;
+  padding: 0.5rem 1.5rem;
 }
 
 .header__imagem {
-  display: flex;
-  justify-content: flex-start;
-  height: 60px;
+  width: 85%;
 }
 
-.header__navigation__links {
+.header__navigation {
   display: flex;
-  flex: 0.85;
   text-align: center;
   justify-content: center;
-  gap: 60px;
-  font-size: 24px;
+  gap: 3.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: "Montserrat", serif;
   color: #121212;
+  
 }
 
 /* estilização específica para os links */
-.header__navigation__links__link {
+.header__navigation__link {
   text-decoration: none;
   background-color: #00095b;
   padding: 12px;
@@ -53,8 +54,13 @@ body {
   color: #f6f6f6;
 }
 
-.header__navigation__links__link:hover {
-  padding: 1.5%;
+/* display none para garantir que ele começar oculto */
+.header__navigation__mobile{
+  display: none; 
+}
+
+.header__navigation__link:hover {
+  scale: 1.1;
   background-color: #121212;
   transition: 0.4s;
 }
@@ -63,16 +69,23 @@ body {
   padding: 0 12.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: center;
   gap: 20px;
   color: #00095b;
-  margin: 1rem 0; /* espaçamento para separar header e footer */
+  margin: 0.5rem 0; /* espaçamento para separar header e footer */
+
+}
+
+.conteudo__principal__imagem{
+  width: 100%;
 }
 
 .conteudo__principal__texto {
   text-align: center;
   font-family: "Montserrat", serif;
-  font-size: 20px;
+  font-size: 1.25rem;
+  width: 100%;
 }
 
 .conteudo__principal__texto__descricao__link {
@@ -82,14 +95,15 @@ body {
   background-color: #00095b;
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+  padding: 0.2rem;
   align-items: center;
-  margin-bottom: auto;
+  bottom: 0%;
+  width: 100%;
 }
 
 .rodape__elementos__esquerda {
   display: flex;
-  padding: 10px 16px;
+  padding: 10px 1rem;
   align-items: center;
   gap: 16px;
 }
@@ -97,7 +111,7 @@ body {
 .rodape__elementos__texto {
   color: #f6f6f6;
   font-family: "Montserrat", serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .rodape__elementos__direita {
@@ -109,6 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 30px 0;
+  flex-grow: 1;
   justify-content: center;
   gap: 48px;
 }
@@ -147,7 +162,7 @@ body {
 .modelos__container__info {
   display: flex;
   width: 260.39px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .modelos__container__info input[type="checkbox"] {
@@ -179,7 +194,7 @@ body {
 
 .btn-comparar:hover {
   background-color: #121212;
-  padding: 8px 36px;
+  scale: 1.1;
   transition: 0.3s;
 }
 
@@ -189,6 +204,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   gap: 90px;
   padding: 35px;
   font-family: "Montserrat", serif;
@@ -210,7 +226,7 @@ body {
   background-color: #00095b;
   padding: 20px;
   color: #f6f6f6;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .form {
@@ -234,7 +250,7 @@ body {
   border: 2px solid #00095b;
   border-radius: 10px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 100%;
   display: flex;
 }
@@ -263,7 +279,7 @@ body {
   background-color: blue;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   color: #f6f6f6;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 10px;
   width: 100%;
   border-radius: 10px;
@@ -273,15 +289,6 @@ body {
 
 .form button:hover {
   background-color: #00095b;
-}
-
-
-@media(max-width: 900px){
-    .header{
-      padding: 4px 8px;
-      }
-
-      .header__imagem{
-        transform: scale(0.7);
-      }
+  scale: 1.035;
+  transition: 0.3s;
 }

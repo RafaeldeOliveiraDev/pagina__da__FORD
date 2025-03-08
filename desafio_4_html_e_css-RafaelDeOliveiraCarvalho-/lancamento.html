@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossos novos lançamentos</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./anexo_desafio_htmlcss/css/reset.css">
+    <link rel="stylesheet" href="responsive.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__imagem">
-        <img
-          src="./anexo_desafio_htmlcss/img/logo-ford-256.png"
-          alt="Logomarca da FORD"
-        />
-      </div>
+        
+            
+      <img src="./anexo_desafio_htmlcss/img/logo-ford-256.png" alt="Logomarca da FORD" />
+  
+ 
+  <nav class="header__navigation">
+      <a class="header__navigation__link" href="home.html">Home</a>
+      <a class="header__navigation__link" href="lancamento.html">Lançamento</a>
+      <a class="header__navigation__link" href="contato.html">Contato</a>
+  </nav>
 
-      <nav class="header__navigation__links">
-        <a class="header__navigation__links__link" href="home.html">Home</a>
-        <a class="header__navigation__links__link" href="lancamento.html"
-          >Lançamento</a
-        >
-        <a class="header__navigation__links__link" href="contato.html"
-          >Contato</a
-        >
-      </nav>
-    </header>
+  <div class="header__navigation__mobile">
+    <details>
+        <summary class="header__navigation__mobile__icon">&#9776;</summary>
+
+        <nav class="header__navigation">
+            <a class="header__navigation__link" href="home.html">Home</a>
+            <a class="header__navigation__link" href="lancamento.html">Lançamento</a>
+            <a class="header__navigation__link" href="contato.html">Contato</a>
+        </nav>
+        
+    </details>
+</div>
+
+</header>
 
     <main class="main__content">
       <div class="main__video">
@@ -90,7 +100,7 @@
     </section>
 
     <div class="botao__comparar__container">
-      <button type="button" class="btn-comparar">Comparar carros</button>
+      <button type="submit" class="btn-comparar">Comparar carros</button>
     </div>
 
     </main>
