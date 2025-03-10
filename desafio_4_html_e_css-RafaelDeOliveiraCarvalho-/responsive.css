@@ -1,8 +1,8 @@
-@media(max-width: 768px){
+@media(max-width: 970px) {
  
     /* PAGINA 1: HOME */
     .header{
-        padding: 4% 7%;
+        padding: 3% 5%;
         display: flex;
         justify-content: space-between;
        
@@ -10,10 +10,13 @@
     
     .header__imagem {
         width: 32%;
+        height: auto;
+        scale: 0.85;
     }
 
     .header__navigation{
         display: none;
+        font-size: 1rem;
      }
     
      .header__navigation__mobile{
@@ -28,7 +31,7 @@
      }
 
      .header__navigation__mobile summary{
-        font-size: 24px;
+        font-size: 1.5rem;
         cursor: pointer;
         user-select: none;
         margin: 0;
@@ -45,11 +48,12 @@
         background: #00095b;
         border: 1px solid #ccc;
         border-radius: 12px;
-        padding: 15px;
+        padding: 0.9375rem;
         margin: 0;
         list-style: none;
         display: none;
         min-width: 150px;
+        z-index: 1;
     }
 
     .header__navigation__mobile  details[open] nav {
@@ -58,10 +62,9 @@
 
       .header__navigation__link {
         display: block;
-        padding: px;
         text-decoration: none;
         color: #f0f0f0;
-        font-size: 17px;
+        font-size: 1.0625rem;
       }
 
       .header__navigation__link:hover {
@@ -69,7 +72,7 @@
       }
 
       .conteudo__principal{
-        gap: 48px;
+        gap: 3rem;
         padding: 0 0.35%;
       }
       
@@ -88,7 +91,7 @@
         width: auto;
         flex-direction: column;
         justify-content: center;
-        
+        padding: 2% 0;
       }
 
       .rodape__elementos__esquerda{
@@ -97,7 +100,7 @@
       }
 
       .rodape__elementos__texto{
-        font-size: 20px;
+        font-size: 1.25rem;
       }
 
       .rodape__elementos__direita{
@@ -105,4 +108,28 @@
         padding: 2% 0;
       }
 
+      /* PÁGINA2: LANÇAMENTO */
+
+
+      .main__video{
+        padding-bottom: 56%; /* Proporção 16:9 (9/16 = 0.5625) */
+      }
+      
+      .modelos{
+        flex-direction: column;
+      }
+
+      .btn-comparar{
+        font-size: 0.75rem;
+      }
+
+      .main__formulario{
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .main__formulario__imagem{
+        scale: 0.8;
+        
+      }
   }
