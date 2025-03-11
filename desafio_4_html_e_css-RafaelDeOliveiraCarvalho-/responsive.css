@@ -115,7 +115,15 @@
         padding-bottom: 56%; /* Proporção 16:9 (9/16 = 0.5625) */
       }
       
-      .modelos{
+      /* .modelos{
+        flex-direction: column;
+      } */
+
+      .modelos {
+        flex-direction: column;
+      }
+
+      .modelos__container {
         flex-direction: column;
       }
 

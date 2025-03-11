@@ -157,20 +157,26 @@ body {
 .modelos__container img {
   width: 100%;
   height: auto;
-  transform: scale(0.75);
+  transform: scale(0.8);
 }
 
-.modelos__container__info {
+.modelos__container__info{
   display: flex;
   width: 16.27rem;
   font-size: 1.125rem;
 }
+
 
 .modelos__container__info input[type="checkbox"] {
   transform: scale(3.5); /* Aumenta o checkbox para ficar mais visível */
   margin-right: 2.35rem;
   border: 2px solid #333;
   cursor: pointer;
+}
+
+
+.modelos__container__info img{
+  scale: 0.5;
 }
 
 .paragrafo__destaque {
@@ -247,7 +253,7 @@ body {
   margin-bottom: 0.3125rem;
 }
 
-.form__control input, .form__control select  {
+.form__control input, .form__control select, .form__control textarea  {
   border: 2px solid #00095b;
   border-radius: 10px;
   padding: 0.625rem;
@@ -256,7 +262,7 @@ body {
   display: flex;
 }
 
-.form__control input:focus, .form__control select option:focus {
+.form__control input:focus, .form__control select option:focus, .form__control textarea:focus {
   /*pseudoclasse de mudar a visibilidade quando for digitar*/
   background-color: #e0e0f8;
 }
