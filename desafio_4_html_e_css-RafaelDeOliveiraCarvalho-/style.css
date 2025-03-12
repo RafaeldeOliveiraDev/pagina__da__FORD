@@ -9,7 +9,7 @@
 
 body {
   color: #000000;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
   /* Para centralizar o conteúdo com flex: */
@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-items: center;
   padding: 0.5rem 1.5rem;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   background-color: #f6f6f6;
 }
@@ -112,6 +112,16 @@ body {
   color: #f6f6f6;
   font-family: "Montserrat", serif;
   font-size: 1rem;
+}
+
+.rodape__copyright__container{
+  width: 18vw;
+}
+
+.rodape__copyright__texto{
+  text-decoration: none;
+  color: #f6f6f6;
+  font-family: "Montserrat", serif;
 }
 
 .rodape__elementos__direita {

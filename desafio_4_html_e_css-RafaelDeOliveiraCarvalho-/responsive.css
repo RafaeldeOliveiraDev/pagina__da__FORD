@@ -103,6 +103,16 @@
         font-size: 1.25rem;
       }
 
+      .rodape__copyright__container{
+        display: flex;
+        width: 80vw;
+        
+      }
+
+      .rodape__copyright__texto{
+        font-size: 0.8rem;
+      }
+
       .rodape__elementos__direita{
        
         padding: 2% 0;
