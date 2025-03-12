@@ -217,18 +217,21 @@ body {
   font-family: "Montserrat", serif;
 }
 
+/* imagem da pagina do formulario */
 .main__formulario__imagem {
   scale: 1.5;
 }
 
+/* container do formulário */
 .container__formulario {
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /*sombreado nas extremidades do container*/
   width: 400px;
   max-width: 100%;
-  overflow: hidden;
+  overflow: hidden; /*para garantir que não vai sobrepor algumas informações*/
 }
 
+/* container do título formulário */
 .header__formulario {
   background-color: #00095b;
   padding: 1.25rem;
@@ -240,8 +243,9 @@ body {
   padding: 1.25rem;
 }
 
+/* container das informações */
 .form__control {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem; /*dá mais margem para baixo*/
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -250,15 +254,16 @@ body {
 }
 
 .form__control label {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.3125rem;/*dá margem entre o input e o label*/
 }
 
+/* estiliza o input, o select e textarea da classe form__control */
 .form__control input, .form__control select, .form__control textarea  {
   border: 2px solid #00095b;
   border-radius: 10px;
   padding: 0.625rem;
   font-size: 0.875rem;
-  width: 100%;
+  width: 100%; /*ocupa 100% da espaço disponível na largura*/
   display: flex;
 }
 
@@ -267,6 +272,7 @@ body {
   background-color: #e0e0f8;
 }
 
+/* icone que pode vim a aparecer em caso de erro ou acerto com o javascript modificando */
 .form__control i {
   position: absolute;
   right: 0.625rem;
@@ -274,6 +280,7 @@ body {
   visibility: hidden;
 }
 
+/* mensagem de erro controlada pelo JavaScript */
 .form__control small {
   position: absolute;
   bottom: 0;
@@ -281,6 +288,7 @@ body {
   visibility: hidden;
 }
 
+/* estilização do botao para submeter os dados */
 .form button {
   border: 2px solid #00095b;
   background-color: blue;
@@ -294,6 +302,7 @@ body {
   cursor: pointer;
 }
 
+/* mudança da visibilidade do botão ao passar o cursor */
 .form button:hover {
   background-color: #00095b;
   scale: 1.035;

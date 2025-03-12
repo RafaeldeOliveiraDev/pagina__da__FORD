@@ -1,4 +1,4 @@
-@media(max-width: 970px) {
+@media screen and (max-width: 970px) {
  
     /* PAGINA 1: HOME */
     .header{
