@@ -92,6 +92,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 2% 0;
+        gap: 0.4rem;
       }
 
       .rodape__elementos__esquerda{
