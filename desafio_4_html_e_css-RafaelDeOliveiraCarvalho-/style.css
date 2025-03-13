@@ -4,11 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat", serif;
+}
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #00095b;
+  --cor-quaternaria: #121212;
+
+  --fonte-primaria: "Montserrat", serif;
+  --fonte-secundaria: "Krona One, sans serif" 
+
+
 }
 
 body {
-  color: #000000;
+  color: var(--cor-primaria);
   width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
@@ -21,7 +33,7 @@ body {
 /* Página1: HOME */
 
 .header {
-  border-bottom: 2px solid #00095b;
+  border-bottom: 2px solid var(--cor-terciaria);
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   align-items: center;
@@ -29,7 +41,7 @@ body {
   padding: 0.5rem 1.5rem;
   width: 100vw;
   z-index: 1;
-  background-color: #f6f6f6;
+  background-color: var(--cor-secundaria);
 }
 
 .header__imagem {
@@ -46,21 +58,21 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "Montserrat", serif;
-  color: #121212;
+  color: var(--cor-quaternaria);
 }
 
 /* estilização específica para os links */
 .header__navigation__link {
   text-decoration: none;
-  background-color: #00095b;
+  background-color: var(--cor-terciaria);
   padding: 0.75rem;
   border-radius: 8px;
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
 }
 
 .header__navigation__link:hover {
   scale: 1.1;
-  background-color: #121212;
+  background-color: var(--cor-quaternaria);
   transition: 0.4s;
 }
 
@@ -75,7 +87,7 @@ body {
   flex-grow: 1 ;
   justify-content: center;
   gap: 1.25rem;
-  color: #00095b;
+  color: var(--cor-terciaria);
   margin: 0.5rem 0; /* espaçamento para separar header e footer */
 }
 
@@ -90,10 +102,10 @@ body {
 }
 
 .conteudo__principal__texto__descricao__link {
-  color: #00095b;
+  color: var(--cor-terciaria);
 }
 .rodape {
-  background-color: #00095b;
+  background-color: var(--cor-terciaria);
   display: flex;
   justify-content: space-between;
   padding: 0.75rem;
@@ -109,7 +121,7 @@ body {
 }
 
 .rodape__elementos__texto {
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   font-family: "Montserrat", serif;
   font-size: 1rem;
 }
@@ -120,7 +132,7 @@ body {
 
 .rodape__copyright__texto{
   text-decoration: none;
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   font-family: "Montserrat", serif;
 }
 
@@ -205,12 +217,12 @@ body {
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   background-color: blue;
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   cursor: pointer;
 }
 
 .btn-comparar:hover {
-  background-color: #121212;
+  background-color: var(--cor-quaternaria);
   scale: 1.1;
   transition: 0.3s;
 }
@@ -243,9 +255,9 @@ body {
 
 /* container do título formulário */
 .header__formulario {
-  background-color: #00095b;
+  background-color: var(--cor-terciaria);
   padding: 1.25rem;
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   font-size: 1.375rem;
 }
 
@@ -269,7 +281,7 @@ body {
 
 /* estiliza o input, o select e textarea da classe form__control */
 .form__control input, .form__control select, .form__control textarea  {
-  border: 2px solid #00095b;
+  border: 2px solid var(--cor-terciaria);
   border-radius: 10px;
   padding: 0.625rem;
   font-size: 0.875rem;
@@ -300,10 +312,10 @@ body {
 
 /* estilização do botao para submeter os dados */
 .form button {
-  border: 2px solid #00095b;
+  border: 2px solid var(--cor-terciaria);
   background-color: blue;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   font-size: 0.875rem;
   padding: 0.625rem;
   width: 100%;
@@ -314,7 +326,7 @@ body {
 
 /* mudança da visibilidade do botão ao passar o cursor */
 .form button:hover {
-  background-color: #00095b;
+  background-color: var(--cor-terciaria);
   scale: 1.035;
   transition: 0.3s;
 }

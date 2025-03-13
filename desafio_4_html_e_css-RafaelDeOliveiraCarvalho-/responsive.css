@@ -24,12 +24,14 @@
         position: relative;
      }
 
+     /*elemento que pode ser expandido ou retraído*/
      .header__navigation__mobile details{
         display: inline-block;
         position: relative;
         
      }
 
+     /*marcador visível que o usuário usa para ver o details*/
      .header__navigation__mobile summary{
         font-size: 1.5rem;
         cursor: pointer;
@@ -37,27 +39,30 @@
         margin: 0;
      }
 
+      /*é um pseudoelemento que aparece ao lado do summary e indica se está expandido ou retraído*/
      .header__navigation__mobile summary::-webkit-details-marker {
         display: none;
     } 
 
-    .header__navigation__mobile details nav {
+    /*estilizo o nav dentro do details dentro da classe header__navigation__mobile*/
+      .header__navigation__mobile details nav {
         position: absolute;
-        right: 0;
-        top: 100%;
+        right: 0; /*posiciona à direita*/
+        top: 100%; /*posiciona o elemento imediatamente abaixo do pai(details)*/
         background: #00095b;
         border: 1px solid #ccc;
         border-radius: 12px;
         padding: 0.9375rem;
         margin: 0;
-        list-style: none;
-        display: none;
+        list-style: none; /*remove estilos padrões específicos*/
+        display: none; /*inicialmente não será exibido*/
         min-width: 150px;
-        z-index: 1;
+        z-index: 1; /*sobrepõe os elementos na direção Z dos eixos*/
     }
 
-    .header__navigation__mobile  details[open] nav {
-        display: block;
+      /*identifica se os elementos que estão no details está visível. Quando clicado esse atributo é adicionado*/
+      .header__navigation__mobile  details[open] nav {
+        display: block; /*torna o nav visível em bloco quando o details for clicado*/
       }
 
       .header__navigation__link {
@@ -84,7 +89,7 @@
       .conteudo__principal__texto{
         font-size: 1.75rem;
         padding: 0 1.5%;
-        font-family: "FordAntenna", Arial, Helvetica, "Microsoft YaHei", "微软雅黑", "STXihei", "华文细黑", "SimSun", "宋体", serif;
+    
       }
 
       .rodape{
@@ -126,10 +131,6 @@
         padding-bottom: 56%; /* Proporção 16:9 (9/16 = 0.5625) */
       }
       
-      /* .modelos{
-        flex-direction: column;
-      } */
-
       .modelos {
         flex-direction: column;
       }
@@ -141,6 +142,8 @@
       .btn-comparar{
         font-size: 0.75rem;
       }
+
+      /* PAGINA3: CONTATO */
 
       .main__formulario{
         flex-direction: column;
