@@ -128,6 +128,10 @@ body {
 
 .rodape__copyright__container{
   width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .rodape__copyright__texto{
@@ -199,6 +203,11 @@ body {
 
 .modelos__container__info img{
   scale: 0.5;
+}
+
+.modelos__container__info__paragrafo{
+  width: 250px;
+  cursor: pointer;
 }
 
 .paragrafo__destaque {
