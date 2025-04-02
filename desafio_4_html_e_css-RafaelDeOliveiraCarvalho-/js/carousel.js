@@ -28,7 +28,7 @@ class Carousel{
     Start(){
         const img = document.getElementById('ranger-img')
         const txt = document.querySelector('#carousel-title');
-        const link = document.querySelector('url');
+        const link = document.getElementById('url');
 
         setInterval(()=>{img.setAttribute("src", this._elementos[this._posicao].imagem);
         txt.textContent = this._elementos[this._posicao].text;
@@ -41,7 +41,7 @@ class Carousel{
 
     Next(){
         // permite percorrer a lista e condiciona para caso chegar no ultimo elemento, volte para o inicial. Se não, incremente até chegar
-        if(this._elementos == this._posicao.length - 1){
+        if(this._posicao == this._elementos.length - 1){
             this._posicao = 0;
         }else{
             this._posicao++
