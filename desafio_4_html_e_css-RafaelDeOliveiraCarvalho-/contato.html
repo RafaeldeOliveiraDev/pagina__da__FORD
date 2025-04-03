@@ -50,55 +50,48 @@
                 <h2>Sobre você</h2>
             </div>
 
-            <form method="get" action="home.html" id="form" class="form">
+            <form onsubmit="Post(event, this);" method="get" class="form">
+                
                 <div class="form__control">
-                    <label for="username">Nome</label>
-                    <input type="text" id="username" placeholder="Digite seu nome ..." required>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-checked-circle"></i>
-                    <small>error message</small>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+                   
                 </div>
 
                 <div class="form__control">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail ..." required>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-checked-circle"></i>
-                    <small>error message</small>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+                 
                 </div>
 
                 <div class="form__control">
                     <label for="telefone">Telefone</label>
-                    <input type="number" id="telefone" placeholder="Digite seu telefone..." required>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-checked-circle"></i>
-                    <small>error message</small>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone..." maxlength="11" required>
+                  
                 </div>
 
                 <div class="form__control">
+                   
                     <label for="assunto">Qual o assunto?</label>
-                    <select name="assunto" id="assunto" required>
+                  
+                    <select id="assunto" name="assunto" required>
                         <option selected disabled value="">Selecione o assunto...</option>
                         <option value="Elogio">Elogio</option>
                         <option value="Reclamacao">Reclamação</option>
                         <option value="Solicitacao">Solicitação</option>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <i class="fas fa-checked-circle"></i>
-                        <small>error message</small>
+                       
                     </select>
 
                 </div>
 
                 <div class="form__control">
                     <label for="mensagem">Comentários</label>
-                    <textarea name="mensagem" id="mensagem" rows="2"
+                    <textarea name="comentario" id="comentario" rows="2"
                         placeholder=" Deixe seus comentários aqui"></textarea>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-checked-circle"></i>
-                    <small>error message</small>
+                    
                 </div>
 
-                <button type="submit" value="">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
 
         </div>
@@ -133,7 +126,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/56018993b9.js" crossorigin="anonymous"></script>
-
+    <script src="./js/forms.js"></script>
 </body>
 
 </html>
