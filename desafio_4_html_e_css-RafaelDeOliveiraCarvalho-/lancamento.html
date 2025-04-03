@@ -103,10 +103,10 @@
 
     </table>
 
-    </section>
+    
 
     <div class="botao__comparar__container">
-      <button type="submit" class="btn-comparar" onclick="ShowCompare()">Comparar carros</button>
+      <button type="submit" class="btn-comparar"  onclick="ShowCompare()">Comparar carros</button>
     </div>
 
   </main>
@@ -138,7 +138,7 @@
     </div>
   </footer>
 
-  <div class="compare">
+  <div id="compare">
     <table>
       <tbody>
       <tr >
@@ -203,8 +203,12 @@
       </tbody>
       
   </table>
+  <div style="text-align: center;padding-bottom: 20px;">
+    <button type="button" style="height: 40px; width: 200px;" onclick="HideCompare()">Fechar</button>
+</div> 
   </div>
 
+  <script src="./js/compare.js"></script>
 </body>
 
 </html>
