@@ -145,26 +145,13 @@
         font-size: 0.75rem;
       }
 
-      /* PAGINA3: CONTATO */
-
-      .main__formulario{
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .main__formulario__imagem{
-        scale: 0.8;
-        
-      }
-
       div#compare{
-        justify-content: center;
         left: 0;
         right: 0;
         width: 100%;
         padding: 1.25rem;
         min-width: 100vw;
-        height: 94vh;
+        height: 100%;
         font-family: "Montserrat", serif;
       }
       
@@ -196,3 +183,16 @@
         }
       }
 
+      /* PAGINA3: CONTATO */
+
+      .main__formulario{
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .main__formulario__imagem{
+        scale: 0.8;
+        
+      }
+
+      
