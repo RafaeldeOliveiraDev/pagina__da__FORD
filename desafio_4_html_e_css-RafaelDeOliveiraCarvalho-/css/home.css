@@ -1,0 +1,26 @@
+/* Página1: HOME */
+
+.conteudo__principal {
+  padding: 0 12.5%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 1.25rem;
+  color: var(--cor-terciaria);
+  margin: 0.5rem 0; /* espaçamento para separar header e footer */
+}
+
+.conteudo__principal img {
+  width: 100%;
+}
+
+.conteudo__principal__texto {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 1.25rem;
+}
+
+.conteudo__principal__texto__descricao__link {
+  color: var(--cor-terciaria);
+}

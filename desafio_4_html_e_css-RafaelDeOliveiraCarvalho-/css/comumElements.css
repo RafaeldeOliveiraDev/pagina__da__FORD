@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #00095b;
+  --cor-quaternaria: #121212;
+
+  --fonte-primaria: "Montserrat", serif;
+  --fonte-secundaria: "Krona One, sans serif";
+}
+
+body {
+  color: var(--cor-primaria);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* Para centralizar o conteúdo com flex: */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+/* HEADER DAS PÁGINAS */
+
+.header {
+  border-bottom: 2px solid var(--cor-terciaria);
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--cor-secundaria);
+}
+
+.header__imagem {
+  height: 3.75rem;
+  justify-self: center;
+  max-width: 100%;
+}
+
+.header__navigation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 3.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  color: var(--cor-quaternaria);
+}
+
+/* estilização específica para os links */
+.header__navigation__link {
+  text-decoration: none;
+  background-color: var(--cor-terciaria);
+  padding: 0.75rem;
+  border-radius: 8px;
+  color: var(--cor-secundaria);
+}
+
+.header__navigation__link:hover {
+  scale: 1.1;
+  background-color: var(--cor-quaternaria);
+  transition: 0.4s;
+}
+
+.header__navigation__mobile {
+  display: none;
+}
+
+/* FOOTER DAS PÁGINAS */
+.rodape {
+  background-color: var(--cor-terciaria);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  align-items: center;
+  bottom: 0%;
+}
+
+.rodape__elementos__esquerda {
+  display: flex;
+  padding: 0.625rem 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rodape__elementos__texto {
+  color: var(--cor-secundaria);
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+}
+
+.rodape__copyright__container {
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rodape__copyright__texto {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: "Montserrat", serif;
+}
+
+.rodape__elementos__direita {
+  padding: 0 1.65625rem;
+}
+
+
+
+

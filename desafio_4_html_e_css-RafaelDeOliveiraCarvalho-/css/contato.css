@@ -1,0 +1,135 @@
+.main__formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 5.625rem;
+  padding: 2.1875rem;
+  font-family: "Montserrat", serif;
+}
+
+/* imagem da pagina do formulario */
+.main__formulario__imagem  {
+  scale: 1.5;
+}
+
+/* container do formulário */
+.container__formulario {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /*sombreado nas extremidades do container*/
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden; /*para garantir que não vai sobrepor algumas informações*/
+}
+
+/* container do título formulário */
+.header__formulario {
+  background-color: var(--cor-terciaria);
+  padding: 1.25rem;
+  color: var(--cor-secundaria);
+  font-size: 1.375rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.725rem;
+  padding: 1.25rem;
+}
+
+
+
+/* container das informações */
+.form__control {
+  margin-bottom: 0.525rem; /*dá mais margem para baixo*/
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+}
+
+.form__control label {
+  margin-bottom: 0.3125rem; /*dá margem entre o input e o label*/
+}
+
+/* estiliza o input, o select e textarea da classe form__control */
+.form__control input,
+.form__control select,
+.form__control textarea {
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 10px;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  width: 100%; /*ocupa 100% da espaço disponível na largura*/
+  display: flex;
+}
+
+.form__control input:focus,
+.form__control select option:focus,
+.form__control textarea:focus {
+  /*pseudoclasse de mudar a visibilidade quando for digitar*/
+  background-color: #e0e0f8;
+}
+
+/* icone que pode vim a aparecer em caso de erro ou acerto com o javascript modificando */
+.form__control i {
+  position: absolute;
+  right: 0.625rem;
+  top: 2.125rem;
+  visibility: hidden;
+}
+
+/* mensagem de erro controlada pelo JavaScript */
+.form__control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* estilização do botao para submeter os dados */
+.form button {
+  border: 2px solid var(--cor-terciaria);
+  background-color: blue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: var(--cor-secundaria);
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Montserrat", serif;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+/* mudança da visibilidade do botão ao passar o cursor */
+.form button:hover {
+  background-color: var(--cor-terciaria);
+  scale: 1.035;
+  transition: 0.3s;
+}
+
+.regulamento__dados{
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.regulamento__dados__texto{
+  font-size: 14.4px;
+}
+
+
+.check1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.375rem;
+}
+
+.label-check1{
+  font-size: 0.8125rem;
+
+}

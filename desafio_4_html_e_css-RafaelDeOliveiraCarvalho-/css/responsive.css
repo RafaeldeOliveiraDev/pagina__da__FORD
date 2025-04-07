@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap");
+
+@media (max-width: 970px) {
+ 
+    /* PAGINA 1: HOME */
+    .header{
+        padding: 3% 5%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    
+    .header__imagem {
+        width: 32%;
+        height: auto;
+        scale: 0.85;
+    }
+
+    .header__navigation{
+        display: none;
+        font-size: 1rem;
+     }
+    
+     .header__navigation__mobile{
+        display: inline-block;
+        position: relative;
+     }
+
+     /*elemento que pode ser expandido ou retraído*/
+     .header__navigation__mobile details{
+        display: inline-block;
+        position: relative;
+        
+     }
+
+     /*marcador visível que o usuário usa para ver o details*/
+     .header__navigation__mobile summary{
+        font-size: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+        margin: 0;
+     }
+
+      /*é um pseudoelemento que aparece ao lado do summary e indica se está expandido ou retraído*/
+     .header__navigation__mobile summary::-webkit-details-marker {
+        display: none;
+    } 
+
+    /*estilizo o nav dentro do details dentro da classe header__navigation__mobile*/
+      .header__navigation__mobile details nav {
+        position: absolute;
+        right: 0; /*posiciona à direita*/
+        top: 100%; /*posiciona o elemento imediatamente abaixo do pai(details)*/
+        background: #00095b;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 0.9375rem;
+        margin: 0;
+        list-style: none; /*remove estilos padrões específicos*/
+        display: none; /*inicialmente não será exibido*/
+        min-width: 150px;
+        z-index: 1; /*sobrepõe os elementos na direção Z dos eixos*/
+    }
+
+      /*identifica se os elementos que estão no details está visível. Quando clicado esse atributo é adicionado*/
+      .header__navigation__mobile  details[open] nav {
+        display: block; /*torna o nav visível em bloco quando o details for clicado*/
+      }
+
+      .header__navigation__link {
+        display: block;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 1.0625rem;
+      }
+
+      .header__navigation__link:hover {
+        color: #333;
+      }
+
+      .conteudo__principal{
+        gap: 3rem;
+        padding: 0 0.35%;
+      }
+      
+      .conteudo__principal__imagem{
+        width: 100% !important;
+        
+      }
+
+      .conteudo__principal__texto{
+        font-size: 1.75rem;
+        padding: 0 1.5%;
+    
+      }
+
+      .rodape{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2% 0;
+        gap: 0.4rem;
+      }
+
+      .rodape__elementos__esquerda{
+        
+        padding: 2% 0;
+      }
+
+      .rodape__elementos__texto{
+        font-size: 1.25rem;
+      }
+
+      .rodape__copyright__container{
+        display: flex;
+        width: 80vw;
+        
+      }
+
+      .rodape__copyright__texto{
+        font-size: 0.8rem;
+      }
+
+      .rodape__elementos__direita{
+       
+        padding: 2% 0;
+      }
+
+      /* PÁGINA2: LANÇAMENTO */
+
+
+      .main__video{
+        padding-bottom: 56%; /* Proporção 16:9 (9/16 = 0.5625) */
+      }
+      
+      .modelos {
+        flex-direction: column;
+      }
+
+      .modelos__container {
+        flex-direction: column;
+      }
+
+      .btn-comparar{
+        font-size: 0.75rem;
+      }
+
+      div#compare{
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 1.25rem;
+        min-width: 100vw;
+        height: 100%;
+        font-family: "Montserrat", serif;
+      }
+      
+        .compare-table {
+          width: 100%; /* Ajusta a largura da tabela para 100% do contêiner */
+          margin: 0 auto;
+        }
+      
+        .compare-row {
+          display: flex;
+           /* Empilha as células verticalmente */
+          align-items: flex-start; /* Alinha o conteúdo à esquerda */
+        }
+      
+        .compare-cell {
+          width: 100%; /* Cada célula ocupa 100% da largura disponível */
+          padding: 4px; /* Reduz o padding para economizar espaço */
+          font-size: 0.875rem; /* Reduz o tamanho da fonte */
+        }
+      
+        .img-car-table {
+          width: 100%; /* Reduz o tamanho das imagens */
+          height: auto;
+        }
+      
+        .botao__fechar {
+          width: 100%; /* O botão ocupa toda a largura disponível */
+          font-size: 0.875rem; /* Reduz o tamanho da fonte do botão */
+        }
+      }
+
+      /* PAGINA3: CONTATO */
+
+      .main__formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .main__formulario__imagem { 
+        scale: 0.8;
+        
+      }
+
+      

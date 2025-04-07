@@ -1,18 +1,18 @@
 const elementos = [
     {
-        imagem: './anexo_desafio_htmlcss/img/imagem_1.jpg',
+        imagem: './img/imagem_1.jpg',
         text: 'Essa é a nova Ford Ranger 2022. Verifique as Novidades.',
         url: 'lancamento.html'
     },
 
     {
-        imagem: './anexo_desafio_htmlcss/img/imagem_2.jpg',
+        imagem: './img/imagem_2.jpg',
         text: 'Ford a nossa história.',
         url: 'lancamento.html'
     },
 
     {
-        imagem:'./anexo_desafio_htmlcss/img/imagem_3.jpg',
+        imagem:'./img/imagem_3.jpg',
         text: 'Nova Ford Bronco Sport 2022.',
         url: 'lancamento.html'
     }
