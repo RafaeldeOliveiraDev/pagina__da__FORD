@@ -1,4 +1,4 @@
-const botaoEnviar = document.getElementById('btn-enviar');;
+const botaoEnviar = document.getElementById('btn-enviar');
 const checkbox1 = document.getElementById('checkbox1')
 
 // quando os checkboxes forem alterados, utiliza a lógica da função validaCheckbox
@@ -45,12 +45,13 @@ function Enviar(nome) {
     }
 }
 
+
 function validaCheckbox(){
    if(checkbox1.checked){
-    botaoEnviar.disabled = false;
-    botaoEnviar.style.opacity = 1;
+    botaoEnviar.disabled = false; //tira o desabilitado do botao
+    botaoEnviar.style.opacity = 1; //muda para opacidade padrão de cores
    }else{
-    botaoEnviar.disabled = true;
-    botaoEnviar.style.opacity = 0.3;
+    botaoEnviar.disabled = true; //desabilita novamente
+    botaoEnviar.style.opacity = 0.3; //volta para opacidade inicial
 }
 }
