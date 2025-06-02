@@ -181,19 +181,19 @@
           width: 100%; /* O botão ocupa toda a largura disponível */
           font-size: 0.875rem; /* Reduz o tamanho da fonte do botão */
         }
+        /* PAGINA3: CONTATO */
+  
+        .main__formulario{
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+  
+        .main__formulario__imagem { 
+          scale: 0.8;
+          
+        }
       }
 
-      /* PAGINA3: CONTATO */
-
-      .main__formulario{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .main__formulario__imagem { 
-        scale: 0.8;
-        
-      }
 
       
